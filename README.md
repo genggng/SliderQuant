@@ -11,7 +11,7 @@ This repository is the official PyTorch implementation of "SliderQuant: Accurate
 
 ![SliderQuant overview](asserts/main-fig.png)
 
-SliderQuant (Sliding-layer Quantization) is a new learnable post-training quantization framework for LLMs, which consists of two key components:
+SliderQuant (**Slid**ing-lay**er** **Quant**ization) is a new learnable post-training quantization framework for LLMs, which consists of two key components:
 
 - Inter-layer sliding quantization couples three types of sliding window designs to address the varying quantization sensitivity of shallow, intermediate and deep layers of any pre-trained LLMs.
 - Intra-layer sliding quantization quantizes layers inside the current slidning window in an incremental manner.
@@ -144,4 +144,4 @@ SliderQuant builds code from:
 - [OmniQuant](https://github.com/OpenGVLab/OmniQuant)
 - [QuaRot](https://github.com/spcl/QuaRot)
 
-Thank you to the authors and maintainers of both projects for making their code public.
+We are grateful to the authors and maintainers of both projects for making their amazing code public.
