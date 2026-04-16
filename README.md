@@ -1,13 +1,21 @@
-# SliderQuant: Accurate Post-Training Quantization for LLMs
-
 <div align="center">
-<a href="https://deep-optimization.github.io/sliderquant/"><img src="https://img.shields.io/badge/Project%20Page-SliderQuant-lightblue?logo=github" alt="Project Page"></a>&nbsp;<a href="#"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?logo=arXiv" alt="arXiv"></a>&nbsp;<a href="https://openreview.net/forum?id=YNqZqw4fLT"><img src="https://img.shields.io/badge/OpenReview-Discussion-8A2BE2?logo=OpenReview" alt="OpenReview"></a>&nbsp;<a href="https://huggingface.co/IntelLabsChina/SliderQuant"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-IntelLabsChina%2FSliderQuant-yellow" alt="Hugging Face"></a>
-
+  <h1>SliderQuant: Accurate Post-Training Quantization for LLMs</h1>
+  <p>Shigeng Wang, Chao Li, Yangyuxuan Kang, Jiawei Fan, Zhonghong Ou, and Anbang Yao</p>
+  <p>
+    <a href="https://deep-optimization.github.io/sliderquant/"><img src="https://img.shields.io/badge/Project%20Page-SliderQuant-lightblue?logo=github" alt="Project Page"></a>
+    <a href="https://arxiv.org/abs/2603.25284"><img src="https://img.shields.io/badge/arXiv-2603.25284-b31b1b.svg?logo=arXiv" alt="arXiv"></a>
+    <a href="https://openreview.net/forum?id=YNqZqw4fLT"><img src="https://img.shields.io/badge/OpenReview-Discussion-8A2BE2?logo=OpenReview" alt="OpenReview"></a>
+    <a href="https://huggingface.co/IntelLabsChina/SliderQuant"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-IntelLabsChina%2FSliderQuant-yellow" alt="Hugging Face"></a>
+  </p>
 </div>
 
-By Shigeng Wang, Chao Li, Yangyuxuan Kang, Jiawei Fan, Zhonghong Ou and Anbang Yao.
+---
 
 This repository is the official PyTorch implementation of "SliderQuant: Accurate Post-Training Quantization for LLMs", accepted to ICLR 2026.
+
+### 📢 News
+* **[March 2026]** 🎉 We release the official codebase and model checkpoints of SliderQuant. See [Model Zoo](#model-zoo) for available weights.
+* **[January 2026]** 🎉 Our paper SliderQuant: Accurate Post-Training Quantization for LLMs has been accepted to **ICLR 2026**.
 
 ![SliderQuant overview](asserts/main-fig.png)
 
@@ -18,7 +26,13 @@ SliderQuant (**Slid**ing-lay**er** **Quant**ization) is a new learnable post-tra
 
 ## Table Of Contents
 
+- [Table Of Contents](#table-of-contents)
 - [Main Results](#main-results)
+    - [Language Generation](#language-generation)
+    - [Zero-Shot Commonsense Reasoning](#zero-shot-commonsense-reasoning)
+    - [Methods With Extra Inference-Time Cost](#methods-with-extra-inference-time-cost)
+    - [MoE Model Results](#moe-model-results)
+    - [Math Resoning and Code Generation](#math-resoning-and-code-generation)
 - [Model Zoo](#model-zoo)
 - [Install](#install)
 - [How To Train](#how-to-train)
