@@ -99,7 +99,7 @@ sliderquant/
 │       └── config.yaml
 ```
 
-1. Edit `task_list.conf` to specify the `result_dir`.
+2. Edit `task_list.conf` to specify the `result_dir`.
 
 ```bash
 result_dir=configs/llama2-7b-w2a16
@@ -111,7 +111,7 @@ WAIT_MODE=true
 WAIT_INTERVAL=60
 ```
 
-1. Start training:
+3. Start training:
 
 ```bash
 ./auto_train_ddp.sh
@@ -131,7 +131,7 @@ WAIT_MODE=true
 WAIT_INTERVAL=60
 ```
 
-1. Run evaluation:
+2. Run evaluation:
 
 ```bash
 ./auto_test_one.sh
