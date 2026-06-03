@@ -78,7 +78,7 @@ All checkpoints are available under [IntelLabsChina/SliderQuant](https://hugging
 ## Install
 
 ```bash
-git clone https://github.com/genggng/sliderquant
+git clone https://github.com/deep-optimization/SliderQuant.git
 
 mamba create -n sliderquant python=3.10 -y
 mamba activate sliderquant
